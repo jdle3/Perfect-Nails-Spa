@@ -157,7 +157,7 @@ header {
 
     .logo {
         order: 1;
-        flex: 1 150%;
+        flex: 1 100%;
         text-align: center;
         flex-grow: 1;
     }
@@ -300,7 +300,7 @@ header {
     }
 
     .hero-content h1 {
-        font-size: 2em;  /* Suitable size for readability */
+        font-size: 1.8em;  /* Suitable size for readability */
         margin-bottom: 1em;  /* Reduce space between the heading and the button */
     }
 
