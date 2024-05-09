@@ -214,11 +214,16 @@ header {
 
     .navbar-btn {
         display: block;
-        width: 80%;
-        margin: 10px auto;
+        width: auto; 
+        padding: 8px 16px;
         font-size: 0.8em;
         text-align: center;
-        padding: 5px;
+        white-space: nowrap;
+    }
+    
+    .nav-links a {
+        font-size: 1.5em;
+        padding: 10px;
     }
 }
 
