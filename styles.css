@@ -67,6 +67,11 @@ body {
     background-color: var(--background-color);
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
 header {
 
     background-size: cover;
