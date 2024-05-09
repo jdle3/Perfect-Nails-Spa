@@ -69,13 +69,13 @@ body {
 
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 header {
 
     background-size: cover;
-    padding: 5px 20px; /* Reduced vertical padding */
+    padding: 5px 20px;
 }
 
 .navbar {
@@ -109,9 +109,9 @@ header {
     font-weight: 500;
     font-size: 24px;
     margin: 25px;
-    position: relative; /* Necessary for absolute positioning of the pseudo-element */
-    display: inline-block; /* Ensures the width is only as wide as the text */
-    overflow: hidden; /* Keeps the pseudo-element within the link's bounds */
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .nav-links a:hover {
@@ -120,7 +120,7 @@ header {
 
 .navbar-btn {
     text-decoration: none;
-    color: var(--primary-color); /* adjust color as needed */
+    color: var(--primary-color);
     padding: 8px 16px;
     border: 2px solid var(--primary-color);
     margin-right: 10px;
@@ -157,58 +157,56 @@ header {
 
     .logo {
         order: 1;
-        flex: 1 100%;
         text-align: center;
         flex-grow: 1;
     }
 
     .logo img {
-        height: 50px; /* Adjust the size as needed */
+        height: 50px;
     }
 
     .nav-links {
-        position: fixed; /* Full-screen overlay */
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
-        z-index: 998; /* Makes sure the menu is on top */
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 998;
         flex-direction: column;
-        justify-content: center; /* Centers items vertically */
-        align-items: center; /* Centers items horizontally */
-        display: none; /* Hidden by default */
+        justify-content: center;
+        align-items: center;
+        display: none;
     }
 
     .nav-links.active {
-        display: flex; /* Change to flex to maintain your flex settings */
+        display: flex;
         align-items: center;
     }
 
     .nav-links a {
-        font-size: 2em; /* Larger font size for better readability on mobile */
-        color: var(--hamburger-menu-text); /* White text color */
-        display: block; /* Makes each link full-width */
+        font-size: 2em;
+        color: var(--hamburger-menu-text); 
+        display: block;
     }
 
     .nav-links a.active {
-        text-decoration: underline;  /* Adds an underline to the active nav link */
+        text-decoration: underline;
     }
     
     .nav-links li {
-        width: 100%; /* Each link takes the full width of the menu */
+        width: 100%;
         text-align: center;
     }
 
     .fa-xmark {
-        color: var(--hamburger-menu-text); /* Ensures the icon is visible on darker backgrounds */
-        font-size: 32px; /* Adjust the size as needed */
-        display: block; /* Ensures that the icons are not inline */
+        color: var(--hamburger-menu-text);
+        font-size: 32px;
+        display: block;
     }
 
     .nav-buttons {
         order: 2;
-        flex: 1 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -236,14 +234,14 @@ header {
 
 .hero-image {
     width: 90%;
-    height: auto; /* Adjust height as needed */
-    object-fit: cover; /* Ensure the image covers the full area without distortion */
+    height: auto;
+    object-fit: cover; 
 }
 
 /* Positioning the text and button over the image */
 .hero-content {
     position: absolute;
-    top: 50%; /* Adjust this value as needed to move text up on desktop */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--button-text-color);
@@ -262,8 +260,8 @@ header {
 /* Styling the button */
 .hero-button {
     text-decoration: none;
-    color: var(--primary-color);; /* adjust color as needed */
-    border: 2px solid var(--primary-color);;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     padding: 24px 48px;
     font-size: 24px;
 }
@@ -275,8 +273,8 @@ header {
 
 @media (max-width: 768px) {
     .hero {
-        height: 30vh;  /* Full viewport height */
-        position: relative;  /* Needed for absolute positioning inside */
+        height: 30vh; 
+        position: relative;
     }
 
     .hero-image {
@@ -285,28 +283,28 @@ header {
         left: 0;
         width: 100%;
         height: 70%;
-        object-fit: contain;  /* Makes the entire image fit within the frame without cropping */
-        background-color: var(--background-color); /* Optional: Adds a background color if the image does not cover the whole area */
+        object-fit: contain;
+        background-color: var(--background-color);
     }
 
     .hero-content {
         position: absolute;
-        top: 30%; /* Adjusted for better vertical positioning */
+        top: 30%; 
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%; /* Slightly reduced for better text display */
+        width: 90%;
         text-align: center;
         color: var(--button-text-color);
     }
 
     .hero-content h1 {
-        font-size: 1.8em;  /* Suitable size for readability */
-        margin-bottom: 1em;  /* Reduce space between the heading and the button */
+        font-size: 1.8em;
+        margin-bottom: 1em;
     }
 
     .hero-button {
-        font-size: 1em;  /* Larger button font */
-        padding: 10px 20px;  /* More substantial button */
+        font-size: 1em; 
+        padding: 10px 20px; 
         border: none;
         background-color: var(--primary-color);
         color: var(--hamburger-menu-text);
@@ -326,13 +324,13 @@ header {
 }
 
 .section-header {
-    margin-bottom: 40px; /* Space between the title and the items */
+    margin-bottom: 40px;
 }
 
 .section-title {
     font-size: 3em;
-    text-align: center;  /* Center the title */
-    font-family: 'Playfair Display', serif;  /* Example font-family */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 .items-container {
@@ -342,13 +340,13 @@ header {
 }
 
 .featured-item {
-    flex: 1; /* Distributes space evenly */
+    flex: 1;
     text-align: center;
     padding: 10px;
 }
 
 .featured-item img {
-    width: 80px; /* Adjust based on your icons' size */
+    width: 80px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -359,7 +357,7 @@ header {
 }
 
 .featured-item p {
-    color: var(--secondary-color); /* Paragraph text color */
+    color: var(--secondary-color);
     line-height: 1.6;
 }
 
@@ -373,18 +371,18 @@ header {
 .feature-section {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;  /* Adjust the value as needed */
+    margin-top: 5%; 
     margin-right: auto;
-    margin-bottom: 0;  /* Keeps bottom margin at 0 */
+    margin-bottom: 0;
     margin-left: auto;
-    max-width: 1200px; /* Adjust width as necessary */
+    max-width: 1200px;
 }
 
 .feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px; /* Space between sections */
+    margin-bottom: 50px;
 }
 
 .feature-image {
@@ -396,7 +394,7 @@ header {
 .feature-content {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centers the button horizontally in a column flex container */
+    align-items: center;
     text-align: center;
     width: 45%;
 }
@@ -416,7 +414,7 @@ header {
 
 .learn-more-btn {
     padding: 12px 24px;
-    color: var(--primary-color); /* adjust color as needed */
+    color: var(--primary-color);
     border: 2px solid var(--primary-color);
     text-decoration: none;
     font-size: 18px;
@@ -429,22 +427,22 @@ header {
 }
 
 .feature-reverse {
-    flex-direction: row-reverse; /* Flips the image and text positions */
+    flex-direction: row-reverse;
 }
 
 @media (max-width: 768px) {
     .feature-section {
-        margin-top: 0; /* Remove top margin if unneeded */
+        margin-top: 0;
         padding-top: 0; 
     }
 
     .feature, .feature-reverse {
         flex-direction: column;
-        align-items: center; /* Center align the features for a consistent look */
+        align-items: center;
     }
 
     .feature-image, .feature-content {
-        width: 100%; /* Full width for images and content */
+        width: 100%;
     }
 
     .feature-content h2 {
@@ -458,15 +456,15 @@ header {
     }
 
     .learn-more-btn {
-        margin-top: 20px; /* Add margin to space button correctly */
+        margin-top: 20px;
     }
 }
 
 /* Services Styles */
 .service-page h1 {
     font-family: "Playfair Display", serif;
-    color: var(--primary-color); /* Dark grey for text */
-    text-align: center; /* Center align the heading */
+    color: var(--primary-color);
+    text-align: center;
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 2.5em;
@@ -542,31 +540,31 @@ header {
 
 /* Individual tab styling */
 .tab {
-    padding: 10px 20px; /* Padding inside each tab */
+    padding: 10px 20px; 
     font-weight: 500;
     font-size: 24px;
     cursor: pointer;
-    color: #313638; /* Medium grey for tab text */
-    text-align: center; /* Center text inside tabs */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    color: #313638;
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
 .tab:hover,
 .tab.active {
-    color: var(--accent-color); /* White text when active/hover */
+    color: var(--accent-color);
     border-bottom: 1px solid var(--accent-color);
     width: fit-content;
 }
 
 /* Content styling */
 .tab-content {
-    display: none; /* Initially hide all tab content */
+    display: none;
     padding: 20px;
     border-top: none;
 }
 
 .tab-content.active {
-    display: block; /* Show active tab content */
+    display: block;
 }
 
 .tab-content h2 {
@@ -580,38 +578,38 @@ header {
 /* Media Query for devices up to 768px wide */
 @media (max-width: 768px) {
     .service-image img {
-        width: 80%; /* Adjust width for very small devices */
+        width: 80%;
     }
 
     .service-item h3, .service-item p, .price {
-        text-align: center; /* Center-align text for better readability */
+        text-align: center;
     }
 
     .tab {
-        padding: 12px; /* Increase padding for easier interaction */
+        padding: 12px;
         text-align: center;
     }
 
     .services-grid {
-        padding: 0 10px; /* Padding inside grid for edge spacing */
+        padding: 0 10px;
     }
     
     .services-grid {
         display: grid;
-        grid-template-columns: 1fr; /* Single column layout on small screens */
+        grid-template-columns: 1fr;
         gap: 20px;
         margin-bottom: 10%;
     }
 
     /* Adjustments to text size and element spacing */
     .service-item h3 {
-        font-size: 18px; /* Smaller for mobile */
+        font-size: 18px; 
         width: 65%;
         margin-left: 20%;
     }
     
     .service-item p {
-        font-size: 16px; /* Larger font size for readability */
+        font-size: 16px;
     }
 
     .price {
@@ -621,24 +619,24 @@ header {
     /* Tab Styles */
     .tab-list {
         display: flex;
-        flex-direction: column; /* Stack tabs vertically */
-        align-items: center; /* Center tabs horizontally */
+        flex-direction: column;
+        align-items: center;
     }
     
     .tab {
-        width: 100%; /* Full width tabs for easier clickability */
-        margin: 5px 0; /* Add space between tabs */
-        font-size: 18px; /* Larger font size for better readability */
+        width: 100%;
+        margin: 5px 0;
+        font-size: 18px; 
     }
     
     /* Ensure content is only displayed when its tab is active */
     .tab-content {
         padding: 10px;
-        display: none; /* Hide by default */
+        display: none;
     }
     
     .tab-content.active {
-        display: block; /* Show when active */
+        display: block;
     }
 
     .tab-content h2 {
@@ -742,14 +740,14 @@ header {
 
 @media (max-width: 768px) {
     .gallery-container {
-        grid-template-columns: 1fr;  /* Only one column on small screens */
+        grid-template-columns: 1fr;
         padding-right: 15px;
-        padding-left: 15px;  /* Reduce padding for smaller screens */
+        padding-left: 15px;
     }
 
     .gallery-image img {
-        width: 100%;  /* Ensure images scale correctly */
-        height: auto;  /* Adjust height automatically */
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -761,7 +759,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 25px 50px;
-    margin: 25px auto; /* Combines margin settings */
+    margin: 25px auto; 
     max-width: 1200px;
 }
 
@@ -820,7 +818,7 @@ header {
     }
 
     .commitment-image, .owner-image {
-        order: -1; /* Only needed if image should come before text */
+        order: -1; 
         margin-bottom: 20px;
     }
 
@@ -829,7 +827,7 @@ header {
     }
 
     .owner-description {
-        margin-bottom: 10%; /* Consistent margin-bottom style */
+        margin-bottom: 10%;
     }
 
     .store-info {
@@ -838,17 +836,17 @@ header {
     }
 
     .store-info h2, .store-info h3, .owner-description h1 {
-        font-size: 2.2em; /* Standardized smaller font size for headers */
+        font-size: 2.2em;
     }
 }
 
 /* Location Page Styles */
 .contact-info {
     display: flex;
-    justify-content: space-around; /* Adjusts space distribution */
-    align-items: center; /* Centers items vertically */
+    justify-content: space-around;
+    align-items: center;
     padding: 20px 0;
-    background-color: #fff; /* Adjust background color as needed */
+    background-color: #fff;
     margin-top: 30px;
 }
 
@@ -857,29 +855,29 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    flex: 1; /* Ensures equal width for all blocks */
+    flex: 1;
 }
 
 .icon-container {
-    margin-bottom: 10px; /* Space between icon and text */
+    margin-bottom: 10px;
 }
 
 .icon-container img {
-    width: 80px; /* Increased icon size */
+    width: 80px;
     height: auto;
 }
 
 .info-block h3 {
     margin: 0;
-    font-size: 2em; /* Increased font size for headers */
-    color: var(--primary-color); /* Adjust text color as needed */
+    font-size: 2em;
+    color: var(--primary-color);
     padding-bottom: 5px;
 }
 
 .info-block p {
     margin: 5px 0 0;
-    font-size: 1.2em; /* Adjust font size as needed */
-    color: var(--secondary-color); /* Adjust text color as needed */
+    font-size: 1.2em;
+    color: var(--secondary-color);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -887,8 +885,8 @@ header {
 /* Map Styles */
 .map-section-title {
     font-size: 3em;
-    text-align: center;  /* Center the title */
-    font-family: 'Playfair Display', serif;  /* Example font-family */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -896,7 +894,7 @@ header {
 #map {
     width: 70%;
     height: 600px;
-    margin: 0 auto 50px; /* Automatically adjust the margin to center the map */
+    margin: 0 auto 50px;
 }
 
 @media (max-width: 768px) {
@@ -905,87 +903,87 @@ header {
     }
 
     .contact-info {
-        flex-direction: column; /* Stack the info blocks vertically */
-        padding: 20px 10px; /* Adjust padding for smaller screens */
+        flex-direction: column;
+        padding: 20px 10px;
     }
 
     .info-block {
-        margin-bottom: 20px; /* Adds space between stacked blocks */
+        margin-bottom: 20px;
     }
 
     .icon-container img {
-        width: 60px; /* Smaller size for icons on smaller screens */
+        width: 60px; 
     }
 
     .info-block h3 {
-        font-size: 1.8em; /* Smaller font size for headers */
+        font-size: 1.8em;
     }
 
     .info-block p {
-        font-size: 1em; /* Smaller font size for paragraphs */
+        font-size: 1em;
     }
 }
 
 /* Book an Appointment Page Styles */
 .call-to-action {
-    text-align: center; /* Center align the content */
-    padding: 40px 20px; /* Ample padding for visual space */
-    margin: 30px 0; /* Space from other page elements */
+    text-align: center; 
+    padding: 40px 20px; 
+    margin: 30px 0;
 }
 
 .cta-content {
-    display: inline-block; /* Center the content block */
-    max-width: 600px; /* Max width for better readability */
+    display: inline-block;
+    max-width: 600px;
 }
 
 .cta-icon {
-    width: 50px; /* Icon size */
+    width: 50px;
     height: auto;
-    margin-bottom: 20px; /* Space below the icon */
+    margin-bottom: 20px;
 }
 
 .call-to-action h2 {
-    color: var(--primary-color); /* Use the primary brand color */
-    margin-bottom: 10px; /* Space between the heading and paragraph */
+    color: var(--primary-color);
+    margin-bottom: 10px;
     font-family: "Playfair Display", serif;
     font-size: 3em;
     padding-bottom: 50px;
 }
 
 .call-to-action p {
-    font-size: 1.5em; /* Larger text for clarity */
-    color: var(--primary-color); /* Subdued text color for easy reading */
-    margin-bottom: 10px; /* Space between paragraphs */
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
 .cta-phone-number {
-    font-size: 1.5em; /* Larger font size for phone number */
-    color: var(--secondary-color); /* Secondary brand color for emphasis */
-    margin-bottom: 20px; /* Space before the button */
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .call-to-action button {
     background-color: var(--primary-color);
     color: var(--hamburger-menu-text);
-    border: none; /* No border */
-    padding: 10px 20px; /* Padding inside the button */
+    border: none;
+    padding: 10px 20px;
     margin-top: 10px;
     margin-bottom: 25px;
-    font-size: 1.2em; /* Text size inside the button */
-    cursor: pointer; /* Cursor effect on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .call-to-action button:hover {
-    background-color: var(--secondary-color); /* Slightly different color on hover */
+    background-color: var(--secondary-color);
 }
 
 .location-info {
-    color: #000;
+    color: var(--primary-color);
     text-align: center;
     padding: 20px;
-    background-color: #fff; /* Or any other color that fits the design */
+    background-color: var(--background-color);
     max-width: 600px;
     margin: 20px auto;
 }
@@ -1008,25 +1006,9 @@ header {
 .location-info h2 {
     font-family: "Playfair Display", serif;
     font-size: 2em;
-    margin-top: 20px; /* Space before business hours */
+    margin-top: 20px;
     margin-bottom: 10px;
     padding-bottom: 15px;
-}
-
-.location-info button {
-    background-color: #000; /* Button background */
-    color: #fff; /* Text color */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-transform: uppercase; /* Style preference */
-}
-
-.location-info button:hover {
-    background-color: #555; /* Darker on hover */
 }
 
 /* Footer Styles */
@@ -1036,7 +1018,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 40px; /* Increased padding for more space around content */
+    padding: 20px 40px;
 }
 
 .footer-left, .footer-center, .footer-right {
@@ -1056,12 +1038,12 @@ header {
 }
 
 .social-icon {
-    width: 24px; /* Adjust size as needed */
+    width: 24px;
     height: auto;
 }
 
 .social-link:not(:last-child) {
-    margin-right: 20px; /* Increased space between social icons */
+    margin-right: 20px;
 }
 
 .social-link img {
@@ -1086,12 +1068,12 @@ header {
     .footer-left, .footer-center, .footer-right {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px; /* Adds more space between each section */
+        margin-bottom: 20px; 
     }
 
     .footer-link, .social-link {
-        padding: 10px 5px; /* Reduce padding for smaller screen */
-        display: inline-block; /* Makes it easier to manage layout on small screens */
+        padding: 10px 5px;
+        display: inline-block;
     }
 
     .social-link:not(:last-child) {
