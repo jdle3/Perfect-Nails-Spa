@@ -453,6 +453,7 @@ header {
 
     .feature p {
         font-size: 1.1em;
+        padding: 0 50px;
     }
 
     .learn-more-btn {
