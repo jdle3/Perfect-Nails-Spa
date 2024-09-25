@@ -227,6 +227,41 @@ header {
     }
 }
 
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+
+    .navbar-btn {
+        font-size: 0.75em;
+        padding: 6px 12px;
+        margin-right: 5px;
+    }
+
+    .logo img {
+        height: 40px;
+        padding: 10px;
+    }
+
+    .hamburger-menu {
+        font-size: 28px;
+    }
+
+    .nav-links a {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .navbar-btn {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+}
+
 /* Hero Image Styles */
 /* Style for the hero image container */
 .hero {
