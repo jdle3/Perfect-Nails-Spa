@@ -149,6 +149,8 @@ header {
         font-size: 32px;
         color: var(--primary-color);
         z-index: 999;
+        margin-left: 0;
+        padding: 0;
     }
 
     .hamburger-menu:hover{
